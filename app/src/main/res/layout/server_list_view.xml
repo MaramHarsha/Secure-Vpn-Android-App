@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/serverItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/usa_flag" />
+
+    <TextView
+        android:id="@+id/countryTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/iconImg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="united kingdom" />
+
+    <TextView
+        android:id="@+id/ipTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconImg"
+        app:layout_constraintTop_toBottomOf="@+id/countryTv"
+        app:layout_constraintTop_toTopOf="@+id/iconImg"
+        tools:text="192.168.2.1" />
+
+    <ImageView
+        android:id="@+id/ivSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_compare_arrows_black_24dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvSpeed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivSpeed"
+        tools:text="14.5 Mbps" />
+
+    <ImageView
+        android:id="@+id/ivPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:src="@drawable/ic_network_check_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/ivSpeed" />
+
+    <TextView
+        android:id="@+id/tvPing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/ivPing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/ivPing"
+        tools:text="20 Ms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

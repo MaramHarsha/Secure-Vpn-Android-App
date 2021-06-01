@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">Secure Vpn</string>
+    <string name="connect">Connect</string>
+    <string name="navigation_drawer_open">Open drawer</string>
+    <string name="navigation_drawer_close">Close drawer</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="about">About</string>
+    <string name="setting">Setting</string>
+    <string name="help">Help</string>
+    <string name="refresh">Refresh</string>
+    <string name="speed">Speed</string>
+    <string name="hostname">Hostname</string>
+    <string name="score">Score</string>
+    <string name="score_short">Score</string>
+    <string name="ping">Ping</string>
+    <string name="session">Session</string>
+    <string name="uptime">Uptime</string>
+    <string name="owner">Owner</string>
+    <string name="tcp_port" translatable="false">TCP</string>
+    <string name="udp_port" translatable="false">UDP</string>
+    <string name="l2tp_support">L2TP Support</string>
+    <string name="l2tp_supported">Yes</string>
+    <string name="days">days</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="connection_error">Error when trying get data from server. Tap to try again!</string>
+    <string name="no_network">Your device is not connect to any network\nPlease connect any wifi or enable mobile data to continue</string>
+    <string name="loading_text">App is fetching data from server\nPlease wait in a moment</string>
+    <string name="search_hint">Country</string>
+    <string name="to_top">Back to top</string>
+    <string name="country">Country</string>
+    <string name="sort_property">Sort by</string>
+    <string name="sort_type">Sort type</string>
+    <string name="sort_asc">Ascending</string>
+    <string name="sort_desc">Descending</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="sort_default">Default</string>
+    <string name="feature_not_available">You can\'t do this action at this moment</string>
+    <!--- Settings -->
+    <string name="setting_cache_label">Cache save time</string>
+    <string name="setting_cache_subtitle">Is the time data will save in device after get data from server</string>
+    <string name="setting_cache_auto_clear_label">Cache will auto clear at:</string>
+    <string name="setting_cache_clear">Clear now</string>
+    <string name="setting_clear_cache_success">Clear cache success</string>
+    <string name="setting_clear_cache_error">Some thing when wrong. Cache can\'t clear</string>
+    <string-array name="setting_cache_time">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hours</item>
+        <item>2 hours</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+    </string-array>
+    <string name="press_back_again_to_exit">Please click BACK again to exit</string>
+    <!-- Detail -->
+    <string name="total_user">Total user</string>
+    <string name="total_traffic">Total traffic</string>
+    <string name="log_type">Log type</string>
+    <string name="connect_to_this_server">Connect to this server</string>
+    <string name="install_openvpn">Install OpenVPN Connect</string>
+    <string name="save_config_file">Save OpenVPN config file</string>
+    <string name="saved_ovpn_file_in">Saved ovpn file in %s. Import to OpenVPN Connect to use it</string>
+    <string name="connect_via_l2tp">Connect via L2TP VPN</string>
+    <string name="connect_use_protocol">Connect use protocol:</string>
+    <string name="retry_connect">Retry connect</string>
+    <string name="vpn_auth_failure">Auth failure</string>
+    <string name="connecting">Connecting…</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnecting">Disconnecting…</string>
+    <string name="canceled">Canceled</string>
+    <string name="copy_ip">Copy IP to clipboard</string>
+    <string name="copy_hostname">Copy HostName to clipboard</string>
+    <string name="copied">Copied</string>
+    <!--VPN String -->
+    <string name="unknown_state">Unknown</string>
+    <string name="notification_title" translatable="false">Secure VPN - %s</string>
+    <string name="state_user_vpn_permission" translatable="false">Waiting for user permission to use VPN API</string>
+    <string name="check_ip">Check your current public IP</string>
+    <string name="about_html">%s is an application allow connection to free VPN server by volunteer around the world from VPN Gate open source project. More information about VPN Gate project in link bellow.</string>
+    <string name="license_html">%s use a part of ICS OpenVPN code as library. See full license in link bellow.</string>
+    <string name="vpn_gate_link" translatable="false">http://www.vpngate.net/en/about_overview.aspx</string>
+    <string name="version">Version:</string>
+    <string name="license_link" translatable="false">https://github.com/schwabe/ics-openvpn/blob/master/doc/LICENSE.txt</string>
+    <string name="license">License</string>
+    <string name="operator_message">Operator message</string>
+    <string name="hide_op_message_5time">Hide all message next 5 connect time</string>
+    <string name="close">Close</string>
+    <string name="name_hint">Your name. Mininum %d character</string>
+    <string name="content_hint">What you need help?\nMinimum %d character</string>
+    <string name="btn_send">Send</string>
+    <string name="name_error_message">Name must be longer than %d character</string>
+    <string name="content_error_message">Content must be longer than %d character</string>
+    <string name="help_request_from">[VPN]Help request from: </string>
+    <string name="send_email">Send email</string>
+    <string name="email_error_fix">Please check correct error first</string>
+    <string name="error_load_profile">Error load VPN profile</string>
+    <string name="traffic_session">Session traffic</string>
+    <string name="clear_statistics">Clear statistics</string>
+    <string name="get_pro_version">Get Pro version</string>
+    <string name="status">Status</string>
+    <string name="tap_to_disconnect">Tap button to disconnect from %s</string>
+    <string name="tap_to_connect_last">Tap button to connect to %s</string>
+    <string name="no_last_vpn_server">Please select a VPN Server by Swiping Up</string>
+    <string name="connect_one_warning">You need connect to at least one VPN Server before access this function</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="feature_available_in_pro">This feature only available in Pro version</string>
+    <string name="block_ads_setting_label">Block Ads (Pro only)</string>
+    <string name="block_ads_setting_hint">Block ads in all app and browser when VPN is connected use DNS</string>
+    <string name="udp_setting_label">Include UDP server</string>
+    <string name="udp_setting_hint">Include UDP server in server list</string>
+    <string name="setting_apply_on_next_connection_time">This setting will apply on next connection time</string>
+    <string name="dns_setting_label">Use custom DNS</string>
+    <string name="dns_setting_hint">Use custom DNS when connected to VPN Server instead of default Google DNS (8.8.8.8/8.8.4.4).\nThis setting will turn off Block Ads setting when enabled</string>
+    <string name="dns_ip_1" translatable="false">DNS 1</string>
+    <string name="dns_ip_2">DNS 2 (optional)</string>
+    <string name="dns_ip_1_hint" translatable="false">8.8.8.8</string>
+    <string name="dns_ip_2_hint" translatable="false">8.8.4.4</string>
+    <string name="use_domain_label">Use domain to connect</string>
+    <string name="use_domain_hint">Use domain .opengw.net to connect to VPN Server instead of Server IP Address</string>
+    <string name="empty_search_result">No sever found with keyword \"%1$s\"</string>
+    <!-- Privacy policy -->
+    <string name="privacy_policy_title">Privacy policy</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_decide">Decide and exit</string>
+    <string name="must_accept_privacy_policy">You need accept privacy policy to use our app</string>
+    <!-- L2TPConnect -->
+    <string name="l2tp_connect_title">Connect to \"%s\" via L2TP/IPSec</string>
+    <string name="l2tp_connect_hint">To connect to server \"%s\" via L2TP/IPSec VPN. Please follow several step bellow</string>
+    <string name="l2tp_connect_add">1. Add new VPN Connection in VPN Setting like this</string>
+    <string name="l2tp_tap_to_connect">2. Tap to created VPN Connection to connect</string>
+    <string name="loading_servers_please_wait">App is fetching data from server\nPlease wait for a moment…</string>
+    <string name="loading_failed_please_try_again">Loading Failed! Please try again</string>
+    <string name="txt_disconnect">Disconnect</string>
+    <string name="txt_connect">Connect</string>
+    <string name="txt_loading">Please Wait</string>
+    <string name="session_upload">Session Upload</string>
+    <string name="session_download">Session Download</string>
+    <string name="_0_bytes">0 Bytes</string>
+    <string name="total_upload">Total Upload</string>
+    <string name="total_download">Total Download</string>
+    <string name="ip">IP</string>
+    <string name="unlimited_vpn_access">Unlimited VPN Access</string>
+    <string name="connection_status">Connection Status</string>
+    <string name="daily_total_usage">Daily/Total Usage</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share with friends</string>
+    <string name="exit_app">Exit</string>
+    <string name="usage_history">Usage History</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="privacy_policy"><![CDATA["<!DOCTYPE html>     <html>     <head>       <meta charset='utf–8'>       <meta name='viewport' content='width=device–width'>     <body>     <strong>Privacy Policy</strong> <p>                   TechnoUpdate built the SecureVPN app as                   an Ad Supported app. This SERVICE is provided by                   TechnoUpdate at no cost and is intended for use as                   is.                 </p> <p>                   This page is used to inform visitors regarding my                   policies with the collection, use, and disclosure of Personal                   Information if anyone decided to use my Service.                 </p> <p>                   If you choose to use my Service, then you agree to                   the collection and use of information in relation to this                   policy. The Personal Information that I collect is                   used for providing and improving the Service. I will not use or share your information with                   anyone except as described in this Privacy Policy.                 </p> <p>                   The terms used in this Privacy Policy have the same meanings                   as in our Terms and Conditions, which is accessible at                   UltimateVPN unless otherwise defined in this Privacy Policy.                 </p> <p><strong>Information Collection and Use</strong></p> <p>                   For a better experience, while using our Service, I                   may require you to provide us with certain personally                   identifiable information. The information that                   I request will be retained on your device and is not collected by me in any way.                 </p> <div><p>                     The app does use third party services that may collect                     information used to identify you.                   </p> <p>                     Link to privacy policy of third party service providers used                     by the app                   </p> <ul><li><a href=\"https://www.google.com/policies/privacy/\" target=\"_blank\">Google Play Services</a></li><li><a href=\"https://support.google.com/admob/answer/6128543?hl=en\" target=\"_blank\">AdMob</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>                   I want to inform you that whenever you                   use my Service, in a case of an error in the app                   I collect data and information (through third party                   products) on your phone called Log Data. This Log Data may                   include information such as your device Internet Protocol                   (“IP”) address, device name, operating system version, the                   configuration of the app when utilizing my Service,                   the time and date of your use of the Service, and other                   statistics.                 </p> <p><strong>Cookies</strong></p> <p>                   Cookies are files with a small amount of data that are                   commonly used as anonymous unique identifiers. These are sent                   to your browser from the websites that you visit and are                   stored on your device's internal memory.                 </p> <p>                   This Service does not use these “cookies” explicitly. However,                   the app may use third party code and libraries that use                   “cookies” to collect information and improve their services.                   You have the option to either accept or refuse these cookies                   and know when a cookie is being sent to your device. If you                   choose to refuse our cookies, you may not be able to use some                   portions of this Service.                 </p> <p><strong>Service Providers</strong></p> <p>                   I may employ third-party companies and                   individuals due to the following reasons:                 </p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>                   I want to inform users of this Service                   that these third parties have access to your Personal                   Information. The reason is to perform the tasks assigned to                   them on our behalf. However, they are obligated not to                   disclose or use the information for any other purpose.                 </p> <p><strong>Security</strong></p> <p>                   I value your trust in providing us your                   Personal Information, thus we are striving to use commercially                   acceptable means of protecting it. But remember that no method                   of transmission over the internet, or method of electronic                   storage is 100% secure and reliable, and I cannot                   guarantee its absolute security.                 </p> <p><strong>Links to Other Sites</strong></p> <p>                   This Service may contain links to other sites. If you click on                   a third-party link, you will be directed to that site. Note                   that these external sites are not operated by me.                   Therefore, I strongly advise you to review the                   Privacy Policy of these websites. I have                   no control over and assume no responsibility for the content,                   privacy policies, or practices of any third-party sites or                   services.                 </p> <p><strong>Children’s Privacy</strong></p> <p>                   These Services do not address anyone under the age of 13.                   I do not knowingly collect personally                   identifiable information from children under 13. In the case                   I discover that a child under 13 has provided                   me with personal information, I immediately                   delete this from our servers. If you are a parent or guardian                   and you are aware that your child has provided us with                   personal information, please contact me so that                   I will be able to do necessary actions.                 </p> <p><strong>Changes to This Privacy Policy</strong></p> <p>                   I may update our Privacy Policy from                   time to time. Thus, you are advised to review this page                   periodically for any changes. I will                   notify you of any changes by posting the new Privacy Policy on                   this page.                 </p> <p>This policy is effective as of 2020-04-19</p> <p><strong>Contact Us</strong></p> <p>                   If you have any questions or suggestions about my                   Privacy Policy, do not hesitate to contact me at technoupdate123@gmail.com.                 </p>      </body>     </html>       "]]></string>
+    <string name="label_privacy_policy">Privacy Policy</string>
+</resources>

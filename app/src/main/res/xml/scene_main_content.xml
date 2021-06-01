@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/ivDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <Constraint
+            android:id="@+id/mainImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHeight_percent="0.25"
+            motion:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+            motion:layout_constraintBottom_toTopOf="@+id/recyclerView"/>
+
+        <Constraint
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:visibility="invisible"
+            motion:layout_constraintHeight_percent="0.1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/rvFrame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:visibility="invisible"
+            motion:layout_constraintHeight_percent="0.1"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <Constraint
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minLines="2"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/btnConnect"
+            android:layout_marginBottom="10dp"
+            android:text="@string/no_network"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <Constraint
+            android:id="@+id/labelSessionUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_upload"
+            motion:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/sessionUploadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/labelSessionUpload"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/labelSessionDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_download"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/sessionDownloadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/labelSessionDownload"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/labelSessionDownload"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/labelTotalUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_upload"
+            motion:layout_constraintTop_toBottomOf="@+id/sessionUploadTv"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/totalUploadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:text="@string/_0_bytes"
+            motion:layout_constraintTop_toBottomOf="@+id/labelTotalUpload"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/labelTotalDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_download"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/sessionDownloadTv"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/sessionDownloadTv"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/totalDownloadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_bytes"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/labelTotalDownload"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/labelTotalDownload"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/imageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/txtStatus"
+            android:layout_marginBottom="16dp" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/ivDrawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <Constraint
+            android:id="@+id/mainImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHeight_percent="0.3" />
+
+        <Constraint
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            motion:layout_constraintHeight_percent="0.35"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/rvFrame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="10dp"
+            android:visibility="visible"
+            motion:layout_constraintHeight_percent="0.35"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            android:layout_margin="16dp"
+            />
+
+        <Constraint
+            android:id="@+id/btnDisconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/recyclerView"
+            android:layout_margin="16dp"
+            />
+
+        <Constraint
+            android:id="@+id/labelSessionUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_upload"
+            motion:layout_constraintTop_toBottomOf="@+id/mainImage"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/sessionUploadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/labelSessionUpload"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/labelSessionDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/session_download"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintTop_toBottomOf="@+id/mainImage"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/sessionDownloadTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/labelSessionDownload"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="@+id/labelSessionDownload"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"/>
+
+        <Constraint
+            android:id="@+id/labelTotalUpload"
+            android:visibility="gone"/>
+
+        <Constraint
+            android:id="@+id/totalUploadTv"
+            android:visibility="gone"/>
+
+        <Constraint
+            android:id="@+id/labelTotalDownload"
+            android:visibility="gone"/>
+
+        <Constraint
+            android:id="@+id/totalDownloadTv"
+            android:visibility="gone"/>
+
+        <Constraint
+            android:id="@+id/imageCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    </ConstraintSet>
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
+        motion:duration="250"
+        motion:motionInterpolator="linear">
+
+        <OnSwipe
+            motion:touchAnchorId="@+id/mainImage"
+            motion:touchAnchorSide="bottom"
+            motion:dragDirection="dragUp" />
+
+    </Transition>
+</MotionScene>

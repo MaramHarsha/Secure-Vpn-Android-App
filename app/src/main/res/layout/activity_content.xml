@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layoutDescription="@xml/scene_main_content">
+
+    <ImageView
+        android:id="@+id/ivDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:onClick="changeDrawerState"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtStatus"
+        android:layout_margin="16dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="24dp"
+            tools:src="@drawable/fr_flag"
+            android:layout_height="24dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/labelSessionUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/session_upload"
+        app:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/sessionUploadTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/_0_bytes"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/labelSessionUpload"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/labelSessionDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/session_download"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivDrawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/sessionDownloadTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_bytes"
+        android:fontFamily="sans-serif"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/labelSessionDownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/labelSessionDownload"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/labelTotalUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_upload"
+        app:layout_constraintTop_toBottomOf="@+id/sessionUploadTv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/totalUploadTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/_0_bytes"
+        android:fontFamily="sans-serif"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalUpload"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/labelTotalDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_download"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/sessionDownloadTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sessionDownloadTv"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/totalDownloadTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0_bytes"
+        android:fontFamily="sans-serif"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalDownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/labelTotalDownload"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/ivDrawer"
+        android:text="@string/app_name"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rvFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/loadingTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/progressBar"
+            android:textColor="@color/white"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            android:text="@string/loading_servers_please_wait"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        tools:listitem="@layout/server_list_view" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:maxLines="2"
+        android:minLines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnConnect"
+        android:layout_marginBottom="10dp"
+        android:text="@string/no_network"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        android:fontFamily="sans-serif"
+        tools:text="@string/connect"
+        android:background="@drawable/selector_btn_connection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
